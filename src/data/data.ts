@@ -147,7 +147,7 @@ export const data = {
     {
       title: "PantryPal",
       description:
-        "Website to allow users to create recipes based ona  series of filters and what's in their fridge.",
+        "Website to allow users to create recipes based on a series of filters and what's in their fridge.",
       image: "/PantryPal.png",
       technologies: [
         "Microsoft Azure",

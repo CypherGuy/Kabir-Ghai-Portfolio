@@ -1,0 +1,258 @@
+@import "../styles/colors.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(
+    to bottom right,
+    var(--background-start),
+    var(--background-end)
+  );
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* Card Animation Styles */
+.animate-card {
+  opacity: 0;
+  transform: translateY(150px);
+  transition-property: transform, opacity;
+  transition-duration: 800ms;
+  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform, opacity;
+}
+
+.animate-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Spotlight Effect Styles */
+.spotlight-container {
+  position: relative;
+}
+
+/* Keep all other existing styles */
+.section-content {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.6s ease-out;
+}
+
+.section-content.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.skill-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.3s ease-out;
+}
+
+.skill-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.project-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 0.5rem;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-6deg);
+  border: 2px solid var(--accent);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  transform: rotate(6deg) scale(1.1);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-image-container {
+    max-width: 80%;
+  }
+}
+
+/* Add these new styles for the animations */
+.transition-all {
+  transition-property: all;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.translate-y-32 {
+  transform: translateY(8rem);
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+/* Add these styles to your existing globals.css */
+
+.dialog-overlay {
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 255, 255, 0.1) 0%,
+    rgba(0, 255, 255, 0.05) 25%,
+    transparent 100%
+  );
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+[data-state="open"] .dialog-content {
+  animation: contentShow 0.3s ease-out;
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translateY(100%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* First fix the card animations by separating hover and slide-in concerns */
+.card-slide {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s cubic-bezier(0.33, 1, 0.68, 1),
+    transform 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform, opacity;
+}
+
+.card-slide.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add hover effect without affecting other cards */
+.card-hover {
+  transition: background-color 0.3s ease;
+}
+
+.card-hover:hover {
+  background-color: rgba(15, 23, 42, 0.3);
+}
+
+/* Time Portal 3D effect */
+.perspective-1000 {
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.transform-3d {
+  transform: rotateX(45deg) scale(0.9);
+  transition: all 0.3s ease;
+}
+
+.portal-card {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+.portal-card:hover .transform-3d {
+  transform: rotateX(45deg) scale(1);
+}
+
+/* Want To section animations */
+.want-to-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.want-to-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.social-button {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-button.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Add the following styles to match the Want To section animation exactly: */
+.about-item {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -29,12 +29,7 @@ export const data = {
 
   // Skills Section with added images and descriptions
   skills: {
-    "Programming languages and Frameworks": [
-      {
-        name: "Python",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      },
+    Frontend: [
       {
         name: "JavaScript",
         image:
@@ -44,16 +39,6 @@ export const data = {
         name: "TypeScript",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-      },
-      {
-        name: "Java",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-      },
-      {
-        name: "NodeJS",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       },
       {
         name: "React",
@@ -81,7 +66,22 @@ export const data = {
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
       },
     ],
-    "Databases and Cloud-based technologies": [
+    Backend: [
+      {
+        name: "Python",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      {
+        name: "Java",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      },
+      {
+        name: "NodeJS",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      },
       {
         name: "PostgreSQL",
         image:
@@ -108,7 +108,7 @@ export const data = {
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
       },
     ],
-    "Tools And Version Control": [
+    "Tools and Version Control": [
       {
         name: "Git",
         image:
@@ -123,6 +123,11 @@ export const data = {
         name: "IntelliJ IDEA",
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg",
+      },
+      {
+        name: "Vercel",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
       },
     ],
   },

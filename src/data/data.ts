@@ -7,7 +7,7 @@ export const data = {
     secondary: "Backend Developer",
   },
   summary:
-    "I am a backend engineer located in London, passionate about building innovative projects that help solve problems",
+    "I am n undergraduate backend engineer located in London, passionate about building innovative projects that help solve problems.",
   profileImage: "/me.jpeg", // Reference from the public folder
 
   // Navigation Links
@@ -174,12 +174,12 @@ export const data = {
     connect: {
       title: "Connect?",
       content:
-        "Networking is key in the tech industry, and I'm always looking to meet new people and expand my professional circle. Whether you're a fellow developer, designer, or entrepreneur, I'd love to chat and learn more about your work. Let's grab a virtual coffee and see where the conversation takes us!",
+        "Networking is key in the tech industry, and I'm always looking to meet new people and expand my professional circle. Whether you're a fellow developer, designer, or entrepreneur, I'd love to chat and learn more about work. Let's grab a virtual coffee and see where the conversation takes us!",
     },
     buildSomething: {
-      title: "Build something?",
+      title: "Build something together?",
       content:
-        "I have a passion for developing innovative web applications that solve complex problems. Whether it's building a custom e-commerce platform or a cutting-edge web app, I'm always ready for a new challenge. Let's create something amazing together!",
+        "I have a passion for developing solutions to problems that people commonly might have. Whether it's a sleek app, or a new cutting-edge web app or anything in between, I'm always ready for a new challenge. Let's create something amazing together!",
     },
   },
 

@@ -7,7 +7,7 @@ export const data = {
     secondary: "Backend Developer",
   },
   summary:
-    "I am n undergraduate backend engineer located in London, passionate about building innovative projects that help solve problems.",
+    "I am an undergraduate backend engineer located in London, passionate about building innovative projects that help solve problems.",
   profileImage: "/me.jpeg", // Reference from the public folder
 
   // Navigation Links

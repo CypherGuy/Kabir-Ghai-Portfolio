@@ -119,8 +119,7 @@ export const data = {
       },
       {
         name: "JWT",
-        image:
-          "https://images.seeklogo.com/logo-png/42/1/jwt-logo-png_seeklogo-428033.png",
+        image: "/jwt.svg",
       },
     ],
     "Tools and Version Control": [

@@ -29,7 +29,7 @@ export const data = {
 
   // Skills Section
   skills: {
-    Frontend: [
+    "Languages & Skills": [
       {
         name: "JavaScript",
         image:
@@ -40,6 +40,32 @@ export const data = {
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       },
+      {
+        name: "Python",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      {
+        name: "Java",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      },
+      {
+        name: "HTML",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+      {
+        name: "SQL",
+        image: "/MySQL.svg", // Add this if you have a generic SQL logo
+      },
+    ],
+    "Frameworks & Libraries": [
       {
         name: "React",
         image:
@@ -56,32 +82,21 @@ export const data = {
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
       },
       {
-        name: "HTML",
+        name: "FastAPI",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
       },
       {
-        name: "CSS",
+        name: "SQLAlchemy",
         image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg",
+      },
+      {
+        name: "JWT",
+        image: "/jwt.svg",
       },
     ],
-    Backend: [
-      {
-        name: "Python",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      },
-      {
-        name: "Java",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-      },
-      {
-        name: "NodeJS",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      },
+    Databases: [
       {
         name: "PostgreSQL",
         image:
@@ -92,6 +107,8 @@ export const data = {
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
       },
+    ],
+    "DevOps & Infrastructure": [
       {
         name: "Docker",
         image:
@@ -107,22 +124,8 @@ export const data = {
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
       },
-      {
-        name: "FastAPI",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
-      },
-      {
-        name: "SQLAlchemy",
-        image:
-          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg",
-      },
-      {
-        name: "JWT",
-        image: "/jwt.svg",
-      },
     ],
-    "Tools and Version Control": [
+    "Tools & Deployment Platforms": [
       {
         name: "Git",
         image:
@@ -155,7 +158,7 @@ export const data = {
     {
       title: "QueryWhisperer",
       description:
-        "A WIP full-stack web application that lets users securely query their databases using natural language.",
+        "A work-in-progress MVP that converts natural language into SQL using schema-aware prompt engineering, with a modular backend and production-deployed database and API. It showcases full-stack system design and readiness for scalable LLM integration.",
       image: "/QueryWhisperer.png",
       technologies: [
         "FastAPI",
@@ -175,16 +178,16 @@ export const data = {
     {
       title: "AoCode",
       description:
-        "Advent of Code IDE designed to help efficiently solve the daily puzzles",
+        "Advent of Code IDE designed to help efficiently solve Advent of Code's daily puzzles. Features Syntax highlighting, a built-in terminal, a code editor and a custom Utils file, all built with PySide.",
       image: "/AoCode.png",
-      technologies: ["Python"],
+      technologies: ["Python", "PySide"],
       githubLink: "https://github.com/CypherGuy/AOCode",
       date: "12/2024 - 02/2025",
     },
     {
       title: "PantryPal",
       description:
-        "Website to allow users to create recipes based on a series of filters and what's in their fridge.",
+        "Website to allow users to create recipes based on a series of filters and what's in their fridge. The website is built using Streamlit and LangChain, with a MySQL database for storing user data.",
       image: "/PantryPal.png",
       technologies: [
         "Microsoft Azure",

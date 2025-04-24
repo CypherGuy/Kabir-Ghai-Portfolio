@@ -8,7 +8,7 @@ export const data = {
   },
   summary:
     "I am an undergraduate backend engineer located in London, passionate about building innovative projects that help solve problems.",
-  profileImage: "/me.jpeg", // Reference from the public folder
+  profileImage: "/me.jpeg",
 
   // Navigation Links
   navigation: [
@@ -24,10 +24,10 @@ export const data = {
     email: "mailto:kabir.ghai@icloud.com",
     github: "https://github.com/CypherGuy",
     linkedin: "https://www.linkedin.com/in/kabirsghai/",
-    resume: "/resume.pdf",
+    resume: "/KabirGhaiResume.pdf",
   },
 
-  // Skills Section with added images and descriptions
+  // Skills Section
   skills: {
     Frontend: [
       {
@@ -107,6 +107,21 @@ export const data = {
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
       },
+      {
+        name: "FastAPI",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+      },
+      {
+        name: "SQLAlchemy",
+        image:
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg",
+      },
+      {
+        name: "JWT",
+        image:
+          "https://images.seeklogo.com/logo-png/42/1/jwt-logo-png_seeklogo-428033.png",
+      },
     ],
     "Tools and Version Control": [
       {
@@ -129,12 +144,35 @@ export const data = {
         image:
           "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
       },
+      {
+        name: "Railway",
+        image: "/Railway.svg",
+      },
     ],
   },
 
-  // Projects Section with added GitHub links
-  // liveLink is optional
+  // Projects Section. githubLink is optional
   projects: [
+    {
+      title: "QueryWhisperer",
+      description:
+        "A WIP full-stack web application that lets users securely query their databases using natural language.",
+      image: "/QueryWhisperer.png",
+      technologies: [
+        "FastAPI",
+        "PostgreSQL",
+        "JWT",
+        "Python",
+        "SQLAlchemy",
+        "TypeScript",
+        "Next.js",
+        "Railway",
+        "Uvicorn",
+      ],
+      githubLink: "https://github.com/CypherGuy/QueryWhisperer",
+      liveLink: "https://querywhisperer.up.railway.app",
+      date: "03/2025 - 04/2025",
+    },
     {
       title: "AoCode",
       description:
@@ -191,7 +229,7 @@ export const data = {
   // Theme
   theme: {
     colors: {
-      accent: "#FF1493", // Hot pink color used throughout the site
+      accent: "#FF1493",
       background: {
         start: "#1a1f2e",
         end: "#2d1b2d",
@@ -203,7 +241,7 @@ export const data = {
     {
       period: "09/2024 - Current",
       title: "Peer Tutor",
-      company: "The University of Kent",
+      company: "At University",
       location: "Canterbury, England",
       responsibilities: [
         "Assisted first-year students with course-related assignments and provided academic advice.",
